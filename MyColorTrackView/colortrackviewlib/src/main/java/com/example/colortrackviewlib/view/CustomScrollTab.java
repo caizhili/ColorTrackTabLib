@@ -17,7 +17,6 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 
 import com.example.colortrackviewlib.R;
-import com.example.colortrackviewlib.view.util.ScreenUtil;
 
 /**
  * Created by Colin.Zhang on 2017/3/16.
@@ -33,7 +32,8 @@ public class CustomScrollTab extends HorizontalScrollView {
     private int tabCount = 3;
     private int tabPadding = 0;
     private int lastScrollX = 0;
-    private int scrollOffset = ScreenUtil.px2dip(ScreenUtil.screenWidth) - 100;
+//    private int scrollOffset = ScreenUtil.px2dip(ScreenUtil.screenWidth) - 100;
+    private int scrollOffset = 0;
     private int currentPosition = 0;
     private int textSize;
     private LinearLayout tabsContainer;

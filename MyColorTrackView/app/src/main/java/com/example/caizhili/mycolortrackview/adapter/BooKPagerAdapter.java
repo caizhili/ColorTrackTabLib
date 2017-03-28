@@ -4,8 +4,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import com.example.caizhili.mycolortrackview.TabFragment;
-import java.util.List;
+import com.example.caizhili.mycolortrackview.activity.TabFragment;
 
 
 /**

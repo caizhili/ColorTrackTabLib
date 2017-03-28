@@ -26,7 +26,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.colortrackviewlib.R;
-import com.example.colortrackviewlib.view.util.ScreenUtil;
+//import com.example.colortrackviewlib.view.util.ScreenUtil;
 
 import java.util.Locale;
 
@@ -67,7 +67,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
     private boolean shouldExpand = false;
     private boolean textAllCaps = true;
 
-    private int scrollOffset = ScreenUtil.px2dip(ScreenUtil.screenWidth)/ 2 ;
+    private int scrollOffset = 0;
 //    private int scrollOffset = 0;
 //    private int scrollOffset = 20;
     private int indicatorHeight = 2;
@@ -378,7 +378,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
             View v = tabsContainer.getChildAt(currentPosition);
             if (v != null && v instanceof TextView) {
                 TextView tab = (TextView) v;
-                setScrollOffset((ScreenUtil.screenWidth - tab.getWidth()) / 2);
+//                setScrollOffset((ScreenUtil.screenWidth - tab.getWidth()) / 2);
 //                setScrollOffset(tab.getWidth() / 2);
             }else if(v != null && v instanceof ColorTrackView){
                 ColorTrackView colorTrackView = (ColorTrackView) v;
@@ -393,7 +393,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
                     left.setProgress( 1-positionOffset);
                     right.setProgress(positionOffset);
                 }
-                setScrollOffset((ScreenUtil.screenWidth - colorTrackView.getWidth()) / 2);
+//                setScrollOffset((ScreenUtil.screenWidth - colorTrackView.getWidth()) / 2);
             }
             scrollToChild(position, (int) (positionOffset * tabsContainer.getChildAt(position).getWidth()));
 

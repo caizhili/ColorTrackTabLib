@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import android.util.DisplayMetrics;
 import android.util.Log;
 
-import com.example.colortrackviewlib.view.MyApplication;
+import com.example.caizhili.mycolortrackview.MyApplication;
 
 import java.lang.reflect.Field;
 

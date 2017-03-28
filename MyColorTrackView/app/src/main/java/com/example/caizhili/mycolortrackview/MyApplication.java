@@ -1,9 +1,10 @@
-package com.example.colortrackviewlib.view;
+package com.example.caizhili.mycolortrackview;
 
 import android.app.Application;
 import android.content.Context;
 
-import com.example.colortrackviewlib.view.util.ScreenUtil;
+import com.example.caizhili.mycolortrackview.util.ScreenUtil;
+
 
 /**
  * Created by caizhili on 2017/3/28.

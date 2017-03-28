@@ -13,9 +13,9 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme"
-        android:name="com.example.colortrackviewlib.view.MyApplication">
+        android:name="com.example.caizhili.mycolortrackview.MyApplication">
         <activity
-            android:name="com.example.caizhili.mycolortrackview.HomeActivity"
+            android:name="com.example.caizhili.mycolortrackview.activity.HomeActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +23,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.caizhili.mycolortrackview.SimpleUseActivity" >
+        <activity android:name="com.example.caizhili.mycolortrackview.activity.SimpleUseActivity" >
         </activity>
-        <activity android:name="com.example.caizhili.mycolortrackview.ViewPagerUseActivity" >
+        <activity android:name="com.example.caizhili.mycolortrackview.activity.ViewPagerUseActivity" >
         </activity>
     </application>
 

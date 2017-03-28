@@ -1,20 +1,10 @@
-package com.example.caizhili.mycolortrackview;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.example.caizhili.mycolortrackview.activity;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v4.view.ViewPager.OnPageChangeListener;
-import android.util.Log;
-import android.view.View;
 
 import com.example.caizhili.mycolortrackview.adapter.BooKPagerAdapter;
-import com.example.colortrackviewlib.view.ColorTrackView;
-import com.example.colortrackviewlib.view.CustomScrollTab;
 import com.example.colortrackviewlib.view.PagerSlidingTabStrip;
 import com.zhy.viewpagerIndicator.R;
 

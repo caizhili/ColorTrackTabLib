@@ -1,4 +1,4 @@
-package com.example.caizhili.mycolortrackview;
+package com.example.caizhili.mycolortrackview.activity;
 
 import android.animation.ObjectAnimator;
 import android.annotation.SuppressLint;
