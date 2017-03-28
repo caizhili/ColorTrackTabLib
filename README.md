@@ -4,21 +4,44 @@
 # 使用
 
 ```xml
- <com.zhy.view.ColorTrackView
-        android:id="@+id/id_changeTextColorView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_centerVertical="true"
-        android:padding="20dp"
-        android:background="#44ff0000"
-        android:gravity="center_vertical"
-        zhy:progress="0"
-        zhy:direction="left"
-        zhy:text="张鸿洋"
-        zhy:text_change_color="#ffff0000"
-        zhy:text_origin_color="#ff000000"
-        zhy:text_size="60sp" />
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.colortrackviewlib.view.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:visibility="visible"
+        app:pstsIndicatorColor="#f4e033"
+        app:pstsDividerColor="#00000000"
+        app:pstsIndicatorHeight="4dp"
+        app:pstsShouldExpand="false"
+        app:pstsTextAllCaps="false"
+        app:pstsColorTrackChangeColor="@color/colorAccent"
+        app:pstsColorTrackOriginColor="@color/colorPrimary"
+        app:psts_text_size="18sp"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </android.support.v4.view.ViewPager>
+
+ </LinearLayout>
+		
+```Activity中
+	
+	BooKPagerAdapter adapter = new BooKPagerAdapter(getSupportFragmentManager(), mTitles);
+		mViewPager.setAdapter(adapter);
+		tabs.setViewPager(mViewPager);
+		mViewPager.setCurrentItem(0);
 ```
 
 注：zhy为命名空间，xmlns:zhy="http://schemas.android.com/apk/res-auto"，可自由修改。
