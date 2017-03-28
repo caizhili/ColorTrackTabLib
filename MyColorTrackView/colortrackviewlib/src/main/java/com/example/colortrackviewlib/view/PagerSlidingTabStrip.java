@@ -393,7 +393,7 @@ public class PagerSlidingTabStrip extends HorizontalScrollView {
                     left.setProgress( 1-positionOffset);
                     right.setProgress(positionOffset);
                 }
-//                setScrollOffset((ScreenUtil.screenWidth - colorTrackView.getWidth()) / 2);
+//                setScrollOffset((ScreenUtil.screenWidth - colorTrackView.getWidth()) / 2);    //设置选中项的位置（包括下划线）
             }
             scrollToChild(position, (int) (positionOffset * tabsContainer.getChildAt(position).getWidth()));
 
