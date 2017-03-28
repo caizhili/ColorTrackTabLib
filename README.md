@@ -44,7 +44,7 @@
 		mViewPager.setCurrentItem(0);
 ```
 
-注：zhy为命名空间，xmlns:zhy="http://schemas.android.com/apk/res-auto"，可自由修改。
+注：其中的ColorTrackView就是文字的渐变效果属性如下
 
 * `progress`  [0.0f , 1.0f]
 * `text` 绘制的文本
@@ -62,7 +62,8 @@
 ![](sample_ColorTrackeView/changecolortvdemo.gif)
 
 
-# 关于我
-[我的博客地址](http://blog.csdn.net/lmj623565791)
+# 特别感谢
+[原来的控件](http://blog.csdn.net/lmj623565791)
+[张林](https://github.com/zhanglinlovejava/TrackColorTab)
 
 
